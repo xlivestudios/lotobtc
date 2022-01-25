@@ -10,11 +10,12 @@
 <title>Lotobtc</title>
 <link rel="icon" type="image/png" href="img/logo.png"/>
 
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="plugins/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
+<link href="plugins/fontawesome6/css/all.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="plugins/bootstrap5/js/bootstrap.bundle.min.js"></script>
 
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ccxt@1.70.42/dist/ccxt.browser.js"></script> -->
 
@@ -53,9 +54,16 @@
     <div class="h3">
       Anlık bitcoin fiyatı
       <br>
-      <span class="btc_usdt"><i class='fa fa-spinner fa-spin'></i></span>$
+      <span class="span_btc_usdt"><i class='fa fa-spinner fa-spin'></i></span>$
       <br><br>
-      <span class="btn btn-link text-white">Haftalık kapanış ne olur?</span>
+      <span class="text-white">Haftalık kapanış ne olur?</span>
+
+      <div class="input-group mb-3" style="padding-left: 40%; padding-right: 40%;">
+        <button type="button" class="btn btn-outline-secondary"><i class="fab fa-bitcoin" style="color: #2196F3;"></i></button>
+        <input id="text_btc_usdt" type="text" class="form-control">
+        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-dollar-sign"></i></button>
+      </div>
+
     </div>
 
 

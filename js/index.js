@@ -12,7 +12,10 @@ function btc_usdt(){
           //response = JSON.parse(response)
           price = response["price"]
           price = parseInt(price)
-          $(".btc_usdt").html(price)
+          $(".span_btc_usdt").html(price)
+
+          text_btc_usdt = $("#text_btc_usdt")
+          if (text_btc_usdt.val() == "") text_btc_usdt.val(price)
           console.log(response)
       });
 }
