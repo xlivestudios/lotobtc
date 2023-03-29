@@ -1,6 +1,12 @@
 debug = true
 binance_api = "https://api.binance.com/api/v3"
 
+
+$(document).ready(function(){
+  setInterval(function () {btc_usdt()}, 2000)
+})
+
+
 function btc_usdt(){
       var settings = {
         "url": binance_api + "/ticker/price?symbol=BTCUSDT",
